@@ -104,14 +104,17 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
                             <h3 class="mb-2">Dashboard LIS</h3>
-                            <div class="page-breadcrumb">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Dashboard</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Main Table LIS</li>
-                                    </ol>
-                                </nav>
-                            </div>
+                            <h6 id="tanggal"></h6>
+                        </div>
+                    </div>  
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-breadcrumb">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Table LIS</li>
+                                </ol>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -178,6 +181,7 @@
         <!-- end wrapper  -->
         <!-- ============================================================== -->
     </div>
+
     <!-- ============================================================== -->
     <!-- end main wrapper  -->
     <!-- ============================================================== -->
@@ -202,6 +206,13 @@
     <script src="assets/vendor/charts/sparkline/spark-js.js"></script>
      <!-- dashboard sales js-->
     <script src="assets/libs/js/dashboard-sales.js"></script>
+
+    <script type="text/javascript">
+        const d = new Date();
+        document.getElementById("tanggal").innerHTML = d;
+    </script>
+
+
 </body>
  
 </html>
