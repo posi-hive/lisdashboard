@@ -60,7 +60,7 @@
         <div class="nav-left-sidebar sidebar-dark">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="d-xl-none d-lg-none" href="index.html" aria-disabled="true">Dashboard</a>
+                    <a class="d-xl-none d-lg-none" href="index.html">Dashboard</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -71,11 +71,11 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-fw fa-file"></i> Pages </a>
+                                <a class="nav-link" href="index.html" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-fw fa-file"></i> Pages </a>
                                 <div id="submenu-6" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="perform.html">Performance</a>
+                                            <a class="nav-link" href="pages/blank-page.html" aria-disabled="true">Blank Page</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Blank Page Header</a>
@@ -122,41 +122,28 @@
                 <!-- pagehader  -->
                 <!-- ============================================================== -->
 
+                <p>Click to trigger a function that will output "Hello World":</p>
 
-                <div class='tableauPlaceholder' id='viz1687336219475' style='position: relative'>
-                    <noscript>
-                    <a href='#'>
-                    <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ra&#47;rangeresultlis&#47;netsales&#47;1_rss.png' style='border: none' />
-                    </a>
-                    </noscript>
-                    <object class='tableauViz'  style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                    <param name='embed_code_version' value='3' /> 
-                    <param name='site_root' value='' />
-                    <param name='name' value='rangeresultlis&#47;netsales' />
-                    <param name='tabs' value='yes' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ra&#47;rangeresultlis&#47;netsales&#47;1.png' /> 
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-US' />
-                    </object>
-                    </div>   
-                    
-                                 
-                    <script type='text/javascript'>                    
-                    var divElement = document.getElementById('viz1687336219475');                    
-                    var vizElement = divElement.getElementsByTagName('object')[0];                    
-                    vizElement.style.width='100%';
-                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-                    var scriptElement = document.createElement('script');                    
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                    </script>
-
+                <button onclick="myFunction()">Click me</button>
+                
+                <p id="demo"></p>
+                
+                <script>
+                function myFunction() {
+                  document.getElementById("demo").innerHTML = "<div class='tableauPlaceholder' id='viz1687336219475' style='position: relative'>+<noscript>+<a href='#'>+<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ra&#47;rangeresultlis&#47;netsales&#47;1_rss.png' style='border: none' />+</a>+</noscript>+<object class='tableauViz'  style='display:none;'>+<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />+<param name='embed_code_version' value='3' />+<param name='site_root' value='' />+<param name='name' value='rangeresultlis&#47;netsales' />+<param name='tabs' value='yes' />+<param name='toolbar' value='yes' />+<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ra&#47;rangeresultlis&#47;netsales&#47;1.png' />+<param name='animate_transition' value='yes' />+<param name='display_static_image' value='yes' />+<param name='display_spinner' value='yes' />+<param name='display_overlay' value='yes' />+<param name='display_count' value='yes' />+<param name='language' value='en-US' />+</object>+</div>  ";
+                };
+                
+                </script>
+                
+                <script>
+                var divElement = document.getElementById('viz1687336219475');                  
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.width='100%';
+                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                   
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
 
 
 
